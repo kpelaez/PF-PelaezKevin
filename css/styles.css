@@ -1,0 +1,172 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Estilo de header */
+.banner{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    background-color: cornflowerblue;    
+}
+
+.banner img{
+    height: 150px;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+/* Estilos de menu */
+.nav-ppal {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.titulos-menu{
+    
+    list-style: none;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.texto-titulo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    color: black;    
+}
+.texto-titulos-menu{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    color: blanchedalmond;
+    
+}
+
+
+/*Estilos textos main*/
+.parrafo{
+    text-decoration:solid;
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+    padding: 50px;    
+}
+
+.pantalla-ppal{
+    background-color: cornflowerblue;
+}
+
+.carousel-tamanio{
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+/*Estilos de main - Contacto*/
+.main-contacto{
+    background-color: cornflowerblue;
+}
+
+
+/*Estilo de footer*/
+footer{
+    background-color: rgb(11, 11, 92);
+}
+footer p{
+    text-align: center;
+    color: blanchedalmond;
+}
+
+/*Estilo de temporadas*/
+
+.pagina-secundaria{
+    background-color: cornflowerblue;
+}
+
+main div h3{
+    text-align: center;
+    background-color: rgb(56, 64, 179);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+
+
+main div img{
+    height: 300px;
+    width: 350px;
+    display: flex;
+    margin: 0 auto;        
+}
+
+h2{
+    text-align: center;
+}
+
+/*Estilo Personajes*/
+.personaje{
+    
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.subtitulo-personaje{
+        display: inline;
+        text-align: left;
+        font-size: 30px;
+}
+
+.Descripcion-personaje{
+    display: inline;
+
+}
+
+main div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+main .img-personaje, .img-pelicula{
+    display: block;
+    margin: auto;   
+}
+/* Estilo para formulario */
+
+form input{
+    margin-left: 5px;
+    margin-top: 15px;
+}
+form div textarea{
+    margin-top: 15px;
+}
+form button{
+    margin-top: 15px;
+}
+
+/*Estilos Peliculas*/
+
+.pelicula{
+    background-color: rgb(56, 64, 179);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.sinapsis{
+  
+    text-align: left;
+    font-size: 30px;
+}
