@@ -71,12 +71,6 @@
 
 }
 
-/*Estilos de main - Contacto*/
-.main-contacto{
-    background-color: cornflowerblue;
-}
-
-
 /*Estilo de footer*/
 footer{
     background-color: rgb(11, 11, 92);
@@ -143,15 +137,49 @@ main .img-personaje, .img-pelicula{
     display: block;
     margin: auto;   
 }
+
+/*Estilos de main - Contacto*/
+.main-contacto{
+    background-color: cornflowerblue;
+}
+
 /* Estilo para formulario */
 
-form input{
+main .div-formulario{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    padding: 15px;
+}
+
+.textarea-formulario{
+    margin: 15px;
+}
+
+.form-grilla{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+
+}
+/* form label, input{
+    display: block;
     margin-left: 5px;
     margin-top: 15px;
+} */
+
+.form__div-uno{
+    display:flex;
+    flex-flow: column wrap;
+    font-weight:bold ;
+    
 }
-form div textarea{
-    margin-top: 15px;
+
+.form__div-dos{
+    font-weight: bold;
 }
+
 form button{
     margin-top: 15px;
 }
