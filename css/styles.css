@@ -155,14 +155,14 @@ main div img{
     padding: 15px;
 }
 
-main .img-personaje, .img-pelicula{
+main .img-personaje{
     display: block;
     margin: auto;   
 }
 
 /*Estilos de main - Contacto*/
 .main-contacto{
-    background-color: cornflowerblue;
+    background-color: #e09f44;
 }
 
 /* Estilo para formulario */
@@ -205,16 +205,12 @@ main .div-formulario{
 
 /*Estilos Peliculas*/
 
-.pelicula{
-    background-color: rgb(56, 64, 179);
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
+.div-card-flex{
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
-.sinapsis{
-  
-    text-align: left;
-    font-size: 30px;
+.div-acordion-bg{
+    background-color: #e09f44!important;
 }
-

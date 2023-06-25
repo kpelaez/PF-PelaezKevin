@@ -20,16 +20,17 @@
                 <img src="../img/bannerpng.png" alt="banner con el logo de digimon">
             </a>
         </div>
-        
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid bg-warning">
-                <a class="navbar-brand bg-warning nav-ppal texto-titulo" href="#">Digimon</a>
+
+        <!-- Menu de bootstrap -->
+        <nav class="navbar navbar-expand-lg nav-bt4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse nav-ppal" id="navbarNavAltMarkup">
-                <div class="navbar-nav titulos-menu">
-                    <a class="nav-link active texto-titulos-menu" aria-current="page" href="../index.html">Home</a>
+                <div class="navbar-nav  titulos-menu">
+                    <a class="nav-link active texto-titulos-menu" aria-current="page" href="../index.html">Inicio</a>
                     <a class="nav-link texto-titulos-menu" href="temporada.html">Temporadas</a>
                     <a class="nav-link texto-titulos-menu" href="peliculas.html">Peliculas</a>
                     <a class="nav-link texto-titulos-menu" href="personajes.html">Personajes</a>
@@ -37,48 +38,144 @@
                 </div>
                 </div>
             </div>
-        </nav>
-       
+        </nav>    
     </header>
 
-    <main class="pagina-secundaria">
+    <main class="main-color">
 
-        <p class="pelicula">Digimon Adventure: ¡Nuestro Juego de Guerra!</p>
-        <img class="img-pelicula" src="../img/pelicula1.webp" alt="Imagen de poster de pelicula degimon">
-        
-        <div>
-            <h4 class="sinapsis">Sinapsis</h4>
-            <p  class="Descripcion-personaje">Digimon Adventure: ¡Nuestro Juego de Guerra! es la segunda película ambientada dentro de la serie y continuidad de Digimon Adventure.
-            Cuando un Mortal Digimon Virus Digievoluciona y causa estragos masivos en Internet, sólo hay algunos de los Niños Elegidos para detenerlo y salvar a Tokio de un ataque con misiles.
-            </p>
-        </div>
-        
-        <p class="pelicula">Digimon Tamers: La Batalla de los Aventureros</p>
-        <img class="img-pelicula" src="../img/pelicula2.webp" alt="Imagen de poster de pelicula degimon">
+        <!-- Aplicamos acordeon y cards -->
+        <div class="div-acordion-bg accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Digimon Adventure
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body div-card-flex">
+                        <!-- insertamos card de pelicula 0-->
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/pelicula0.webp "class="card-img-top" alt="Poster de la primera pelicula de Digimon año 1999">
+                            <div class="card-body">
+                                <h5 class="card-title">Digimon The Movie</h5>
+                                <p class="card-text"><strong>Sinopsis:</strong> Desarrollada en 1995, cuatro años antes de los acontecimientos de la serie de televisión, la película narra cómo dos niños reciben un extraño huevo a través de su ordenador, del que eclosiona su primer Digimon dando lugar a una noche que terminaría cambiando sus vidas para siempre. </p>
+                            </div>
+                        </div>
+                        
+                        <!-- insertamos card de pelicula 1 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/pelicula1.webp" class="card-img-top" alt="Poster de la segunda pelicula de Digimon">
+                            <div class="card-body">
+                                <h5 class="card-title">Boku no war Game</h5>
+                                <p class="card-text"><strong>Sinopsis: </strong> Cuando un Mortal Digimon Virus Digievoluciona y causa estragos masivos en Internet, sólo hay algunos de los Niños Elegidos para detenerlo y salvar a Tokio de un ataque con misiles.</p>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Digimon Adventure 02
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body div-card-flex">
+                        
+                        <!-- insertamos card de pelicula 3 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/pelicula3.jpg" class="card-img-top" alt="Poster de primera pelicula de adventure 02 año 2000">
+                            <div class="card-body">
+                                <h5 class="card-title">Digimon Hurricane Touchdown!! & Supreme evolution!! The Golden Digimentals</h5>
+                                <p class="card-text"><strong>Sinapsis:</strong>Años después de que un joven en Estados Unidos pierde a uno de sus amigos Digimon, un malvado Digimon viral secuestra con éxito a los Niños Elegidos originales. Sus amigos más jóvenes deben competir contra el tiempo con sus socios Digimon para descubrir la fuente de esta nueva amenaza, y tal vez resolver un misterio de años.</p>
+                            </div>
+                        </div>
 
-        <div>
-            <h4 class="sinapsis">Sinapsis</h4>
-            <p class="Descripcion-personaje">Los Tamers Takato, Ruki y Jianliang se encuentran de vacaciones de verano y se separan para disfrutar de estas. Takato visita a su primo Kai en Okinawa con Guilmon, Jianliang investiga un meteoro submarino con Terriermon y Ruki se queda atrás con Renamon para defender a su ciudad de los digimon malignos que aparezcan allí.
-            
-            Un Digimon maligno conocido como Mephismon surge y pone en marcha un plan que implica la nueva moda para mascotas digitales conocido como V-Pet para desactivar las comunicaciones en todo el mundo y permitir que los digimon pasen libremente al mundo real. Ahora, los Tamers deberán contar con la ayuda de Omnimon y Minami, la hija del creador de los V-Pets, con su digimon, al que ella llama Mei, para acabar con esta amenaza.
-            </p>
+                        <!-- insertamos card de pelicula 4 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/pelicula4.jpg" class="card-img-top" alt="Poster de la segunda pelicula de digimon adventure 02. año 2001">
+                            <div class="card-body">
+                                <h5 class="card-title">Diaboromon Contraataca</h5>
+                                <p class="card-text"><strong>Sinapsis:</strong>El antagonista de la segunda película, Diaboromon, reaparece para vengarse de los que lo destruyeron antes (al parecer sobrevivió con una de sus copias), multiplicándose para ejecutar su plan secreto. Ahora dependerá de los nuevos elegidos junto con los antiguos elegidos derrotar a Diaboromon de una vez por todas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Digimon Tamers
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body div-card-flex">
+                        <!-- insertamos card de pelicula 5 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/pelicula5.webp" class="card-img-top" alt="Poster de la quinta pelicula de la franquicia y la primera de digimon tamers">
+                            <div class="card-body">
+                                <h5 class="card-title">La Batalla de los Aventureros</h5>
+                                <p class="card-text"><strong>Sinapsis:</strong>Un Digimon maligno conocido como Mephismon surge y pone en marcha un plan que implica la nueva moda para mascotas digitales conocido como V-Pet para desactivar las comunicaciones en todo el mundo y permitir que los digimon pasen libremente al mundo real. Ahora, los Tamers deberán contar con la ayuda de Omnimon y Minami, la hija del creador de los V-Pets, con su digimon, al que ella llama Mei, para acabar con esta amenaza.</p>
+                            </div>
+                        </div>
+                        <!-- insertamos card de pelicula 6 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/pelicula6.jpg" class="card-img-top" alt="Poster de la segunda pelicula de digimon tamers. El expreso digimon fugitivo. Año 2002">
+                            <div class="card-body">
+                                <h5 class="card-title">El Expreso Digimon Fugitivo</h5>
+                                <p class="card-text"><strong>Sinapsis:</strong> Seis meses después de que el D-Reaper fuera destruido, los Tamers planean organizar una fiesta sorpresa para Rika, pero Rika lo descubre. De repente, un tren-Digimon llamado Locomon comienza a correr alrededor de las vías, causando estragos. Los Tamers responden a esto, ya que Takato convierte a Guilmon en Growlmon para detener el tren de Digimon, pero falla cuando Takato, Rika y Renamon lo suben en un intento de frenarlo. Los otros, excluyendo a Suzie, usan un tren de carga para alcanzar a Locomon</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Digimon Frontier
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body div-card-flex">
+                        <!-- insertamos card de pelicula 7 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/pelicula7.webp" class="card-img-top" alt="Poster de la septima pelicula de la franquicia y la primera de digimon frontier. El Digimon Ancestral revive. Año 2002">
+                            <div class="card-body">
+                                <h5 class="card-title">El Digimon Ancestral Revive</h5>
+                                <p class="card-text"><strong>Sinapsis:</strong> Takuya, Izumi, Kouji, Junpei y Tomoki se pierden y entran en la isla del extremo del Mundo Digital, de la que aparentemente nadie puede regresar. Allí viven dos clanes: El tipo Digimon humano ayuda a Takuya, Junpei y Tomoki, y el tipo bestia dio la bienvenida a Izumi y a Kouji; quedando los niños en medio de una guerra.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Digimon Savers
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body div-card-flex">
+                        <!-- insertamos card de pelicula 8 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/pelicula8.webp" class="card-img-top" alt="Poster de la pelicula numero 8 de digimon. Savers. Ultima power burst mode invoke. año 2006">
+                            <div class="card-body">
+                                <h5 class="card-title">Ultimate Power! Burst Mode invoke</h5>
+                                <p class="card-text"><strong>Sinapsis:</strong> La historia comienza cuando se ha desatado un mal en el mundo humano y todos los DATS son capturados y sumergidos en un sueño eterno. Ahora, ¿quién podrá salvar a la humanidad? Ese es Agumon y los digimon de DATS quienes se unen a una digimon en forma humana la cual le ayuda a combatir un Digimon Maligno llamado Argomon que insiste en que los humanos son malos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-       
-        <p class="pelicula">Digimon Adventure: Last Evolution Kizuna</p>
-        <img class="img-pelicula" src="../img/pelicula3.webp" alt="Imagen de poster de pelicula degimon">
-        
-        <div>
-            <h4 class="sinapsis">Sinapsis</h4>
-            <p class="Descripcion-personaje">Película de Digimon Adventure para conmemorar el 20º aniversario del primer anime.
-            Nos muestra a los niños elegidos de la primer temporada (Adventure) ya mucho mas grandes y con toda una aventura por venir. 
-            </p>
-        </div>
-       
     </main>
 
-    <footer class= "bg-warning">
-        <p>Digimon - Todos los derechos reservados 2023</p>
+    <footer>
+        <p>Digimon - Todos los derechos reservados 2023 | Desarrollado por PelaezKevin </p>
     </footer>
+    
+    <!-- Script de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
