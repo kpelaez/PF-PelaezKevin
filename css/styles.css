@@ -79,17 +79,34 @@ h2{
     margin-top: 10px;
 
 }
-.parrafo{
-    font-weight: 500;
-    color: #063f5e;
-    font-size: 22px;
-    text-align: justify;
-    padding: 30px;
-    margin-bottom: 0;    
+
+/*¨Para Celulares*/
+@media (max-width:799px){
+    .parrafo{
+        font-weight: 400;
+        color: #063f5e;
+        font-size: 18px;
+        text-align: justify;
+        padding: 30px;
+        margin-bottom: 0;    
+    }
+}
+
+/*Para desktop*/
+@media (min-width:800px){
+    .parrafo{
+        font-weight: 500;
+        color: #063f5e;
+        font-size: 22px;
+        text-align: justify;
+        padding: 30px;
+        margin-bottom: 0;    
+    }
 }
 
 .main-color{
     background-color: #e09f44;
+    
 }
 
 .img-digimon{
@@ -107,12 +124,12 @@ footer p{
 
 /*Estilo de temporadas*/
 
-.pagina-secundaria{
-    background-color: cornflowerblue;
+.titulo-h2-temp{
+    margin: 0;
 }
 
 .cuerpo-temp{
-    height: 100vh;
+    height: max-content;
 
 }
 
@@ -144,6 +161,8 @@ footer p{
     .div-temp-descripcion{
         grid-area: div-descripcion;
         font-weight: 600;
+        align-content: center;
+        height: auto;  
     }
 }
 
@@ -171,15 +190,11 @@ footer p{
     
     .div-temp-descripcion{
         font-weight: 400;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        height: auto;
     } 
-}
-
-.div-temp-descripcion{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    height: 170px;
-    
 }
 
 
