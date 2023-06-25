@@ -111,6 +111,78 @@ footer p{
     background-color: cornflowerblue;
 }
 
+.cuerpo-temp{
+    height: 100vh;
+
+}
+
+
+/* Para desktop */
+@media (min-width: 800px ){
+    .div-temporadas{
+        display: grid;
+        grid-template-areas:
+        "titulo-temporada"
+        "div-img-temp"
+        "div-descripcion";
+        /* height: auto; */
+    
+    }
+    .titulo-temp{
+        grid-area: titulo-temporada;
+    }
+    .div-img-temp{    
+        grid-area: div-img-temp;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        height: auto;
+        gap: 10px;
+    }
+    .div-img-temp img{
+        max-width: 100%;
+    }
+    .div-temp-descripcion{
+        grid-area: div-descripcion;
+        font-weight: 600;
+    }
+}
+
+/* Para celulares */
+@media (max-width:799px){
+
+    .titulo-temp{
+        font-size: 25px;
+        font-weight:500;
+    }
+    .div-temporadas{
+        display: flex;
+        flex-direction: column;
+        height: auto;    
+    }
+    .div-img-temp{    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: max-content;
+        gap: 10px;
+        width: 40%;
+    }
+    
+    
+    .div-temp-descripcion{
+        font-weight: 400;
+    } 
+}
+
+.div-temp-descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 170px;
+    
+}
+
+
 main div h3{
     text-align: center;
     background-color: rgb(56, 64, 179);
@@ -120,12 +192,12 @@ main div h3{
 
 
 
-main div img{
+/* main div img{
     height: 300px;
     width: 350px;
     display: flex;
     margin: 0 auto;        
-}
+} */
 
 
 /*Estilo Personajes*/
