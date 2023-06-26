@@ -1,312 +1,217 @@
-/*RESET*/
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-}
+/*Comentario que se ve en css*/
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/* Estilo de header */
-.banner{
-    display: flex;
-    justify-content: center;
-    height: 200px;
-    background-color: #056AA6;    
-}
-
-.banner img{
+/*Estilos de header-banner*/
+.banner {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  background-color: #056AA6; }
+  .banner img {
     height: 150px;
     margin-top: 25px;
-    justify-content: center;
-}
+    justify-content: center; }
 
-/* Estilos de menu */
+/*Estilos de menu de navegacion*/
 .nav-ppal {
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: center;
-    align-items: center;
-}
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: center;
+  align-items: center; }
 
-.nav-bt4{
-    background-color: #063f5e;
-}
+.nav-bt4 {
+  background-color: #063f5e; }
 
-.titulos-menu{
-    
-    list-style: none;
-    margin-left: 25px;
-    margin-bottom: 15px;
-    text-align: center;
-}
+.titulos-menu {
+  list-style: none;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  text-align: center; }
 
-.titulo-ppal{
+.texto-titulos-menu {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: underline;
+  color: #e09f44 !important; }
+
+/*Estilos para main*/
+.titulos-ppal {
+  color: #063f5e;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 0.25px black; }
+
+.texto-titulo {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: underline;
+  color: black; }
+
+.main-color {
+  background-color: #e09f44; }
+
+main h2 {
+  color: #063f5e;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  -webkit-text-stroke: 0.25px black; }
+
+/*Para celulares cambios en main de ppal*/
+@media (max-width: 799px) {
+  .parrafo {
+    font-weight: 400;
     color: #063f5e;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom:20px;
-    -webkit-text-stroke: 0.25px black;
-}
-
-.texto-titulo{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-decoration: underline;
-    color: black;    
-}
-.texto-titulos-menu{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-decoration: underline;
-    color: #e09f44!important;
-    
-}
-
-
-/*Estilos textos main*/
-
-h1{
+    font-size: 18px;
+    text-align: justify;
+    padding: 30px;
+    margin-bottom: 0; }
+  h1 {
     color: #063f5e;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
-    margin-bottom: 20px;
-    -webkit-text-stroke: 0.25px black;
-}
+    -webkit-text-stroke: 0.15px black;
+    font-size: 25px; } }
 
-h2{
+/*Para desktop cambios en ppal*/
+@media (min-width: 800px) {
+  .parrafo {
+    font-weight: 500;
     color: #063f5e;
-    font-weight: 600;
-    -webkit-text-stroke: 0.25px black;
-    text-align: center;
-    margin-top: 10px;
+    font-size: 22px;
+    text-align: justify;
+    padding: 30px;
+    margin-bottom: 0; } }
 
-}
+/*Para definir altura de carousel de home*/
+.img-digimon {
+  height: 400px; }
 
-/*¨Para Celulares*/
-@media (max-width:799px){
-    .parrafo{
-        font-weight: 400;
-        color: #063f5e;
-        font-size: 18px;
-        text-align: justify;
-        padding: 30px;
-        margin-bottom: 0;    
-    }
-
-    h1{
-        color: #063f5e;
-        font-weight:500;
-        text-align: center;
-        -webkit-text-stroke: 0.15px black;
-        font-size: 25px;
-    }    
-}
-
-/*Para desktop*/
-@media (min-width:800px){
-    .parrafo{
-        font-weight: 500;
-        color: #063f5e;
-        font-size: 22px;
-        text-align: justify;
-        padding: 30px;
-        margin-bottom: 0;    
-    }
-}
-
-.main-color{
-    background-color: #e09f44;
-    
-}
-
-.img-digimon{
-    height: 400px;
-}
-/*Estilo de footer*/
-footer{
-    background-color:#063f5e;
-}
-footer p{
+/*Estilo de footer de todas las paginas*/
+footer {
+  background-color: #063f5e; }
+  footer p {
     text-align: center;
     color: #e09f44;
-    margin-bottom: 0;
-}
+    margin-bottom: 0; }
 
-/*Estilo de temporadas*/
+/*Estilo de page: temporadas*/
+.titulo-h2-temp {
+  margin: 0; }
 
-.titulo-h2-temp{
-    margin: 0;
-}
+.cuerpo-temp {
+  height: max-content; }
 
-.cuerpo-temp{
-    height: max-content;
-
-}
-
-
-/* Para desktop */
-@media (min-width: 800px ){
-    .div-temporadas{
-        display: grid;
-        grid-template-areas:
-        "titulo-temporada"
-        "div-img-temp"
-        "div-descripcion";
-        /* height: auto; */
-    
-    }
-    .titulo-temp{
-        grid-area: titulo-temporada;
-    }
-    .div-img-temp{    
-        grid-area: div-img-temp;
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
-        height: auto;
-        gap: 10px;
-    }
-    .div-img-temp img{
-        max-width: 100%;
-    }
-    .div-temp-descripcion{
-        grid-area: div-descripcion;
-        font-weight: 600;
-        align-content: center;
-        height: auto;  
-    }
-}
-
-/* Para celulares */
-@media (max-width:799px){
-
-    .titulo-temp{
-        font-size: 25px;
-        font-weight:500;
-    }
-    .div-temporadas{
-        display: flex;
-        flex-direction: column;
-        height: auto;    
-    }
-    .div-img-temp{    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: max-content;
-        gap: 10px;
-        width: 40%;
-    }
-    
-    
-    .div-temp-descripcion{
-        font-weight: 400;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        height: auto;
-    } 
-}
-
-
-main div h3{
+/* Para celulares de pantalla temporada*/
+@media (max-width: 799px) {
+  .titulo-temp {
+    font-size: 25px;
+    font-weight: 500;
     text-align: center;
-    background-color: rgb(56, 64, 179);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-}
-
-
-
-/* main div img{
-    height: 300px;
-    width: 350px;
+    background-color: #3840b3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+  .div-temporadas {
     display: flex;
-    margin: 0 auto;        
-} */
-
-
-/*Estilo Personajes*/
-.personaje{
-    
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-}
-
-.subtitulo-personaje{
-        display: inline;
-        text-align: left;
-        font-size: 30px;
-}
-
-.Descripcion-personaje{
-    display: inline;
-
-}
-
-.div-personajes{
+    flex-direction: column;
+    height: auto; }
+  .div-img-temp {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 15px;
-}
-
-main .img-personaje{
-    display: block;
-    margin: auto;   
-}
-
-/*Estilos de main - Contacto*/
-.main-contacto{
-    background-color: #e09f44;
-}
-
-/* Estilo para formulario */
-
-main .div-formulario{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: start;
-    align-items: center;
-    padding: 15px;
-}
-
-.textarea-formulario{
-    margin: 15px;
-}
-
-.form-grilla{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-
-}
-/* form label, input{
-    display: block;
-    margin-left: 5px;
-    margin-top: 15px;
-} */
-
-.form__div-uno{
-    display:flex;
-    flex-flow: column wrap;
-    font-weight:bold ;
-    
-}
-
-.form__div-dos{
-    font-weight: bold;
-}
-
-
-/*Estilos Peliculas*/
-
-.div-card-flex{
+    height: max-content;
+    gap: 10px;
+    width: 40%; }
+  .div-temp-descripcion {
+    font-weight: 400;
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
+    height: auto; } }
 
-}
+/* Para desktop de pantalla temporada*/
+@media (min-width: 800px) {
+  .div-temporadas {
+    display: grid;
+    grid-template-areas: "titulo-temporada" "div-img-temp" "div-descripcion"; }
+  .titulo-temp {
+    grid-area: titulo-temporada;
+    text-align: center;
+    background-color: #3840b3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px; }
+  .div-img-temp {
+    grid-area: div-img-temp;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    gap: 10px; }
+  .div-img-temp img {
+    max-width: 100%; }
+  .div-temp-descripcion {
+    grid-area: div-descripcion;
+    font-weight: 600;
+    align-content: center;
+    height: auto; } }
 
-.div-acordion-bg{
-    background-color: #e09f44!important;
-}
+/*Estilo de page: Personajes*/
+.personaje {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px; }
+
+.subtitulo-personaje {
+  display: inline;
+  text-align: left;
+  font-size: 30px; }
+
+.Descripcion-personaje {
+  display: inline; }
+
+.div-personajes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px; }
+
+.img-personaje {
+  display: block;
+  margin: auto; }
+
+/*Estilos page: Peliculas*/
+.div-card-flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.div-acordion-bg {
+  background-color: #e09f44 !important; }
+
+/*Estilos page: Contacto*/
+/*Estilo para formulario*/
+.div-formulario {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: center;
+  padding: 15px; }
+
+.form-grilla {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto; }
+
+.form__div-uno {
+  display: flex;
+  flex-flow: column wrap;
+  font-weight: bold; }
+
+.form__div-dos {
+  font-weight: bold; }
+
+.textarea-formulario {
+  margin: 15px; }
